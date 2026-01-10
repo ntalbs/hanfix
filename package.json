@@ -1,0 +1,41 @@
+{
+  "name": "hanfix",
+  "version": "0.1.0",
+  "description": "Korean grammar checker using Daum grammar checker",
+  "keywords": [
+    "한글",
+    "한국어",
+    "맞춤법",
+    "Korean",
+    "hangul",
+    "spell",
+    "spellchecker"
+  ],
+  "homepage": "https://github.com/ntalbs/hanfix#readme",
+  "bugs": {
+    "url": "https://github.com/ntalbs/hanfix/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntalbs/hanfix.git"
+  },
+  "license": "ISC",
+  "author": "ntalbs",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "hanfix": "./src/index.js"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jsdom": "^27.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0"
+  }
+}
