@@ -31,3 +31,17 @@ Options:
   -c, --include-corrected  include corrected text in the result
   -h, --help               display help for command
 ```
+
+결과는 JSON으로 출력되며 다음과 같은 형식입니다.
+
+```json
+{
+  "errors": [
+    {
+      "original": "원래 텍스트...",
+      "suggestions": ["교정제안1", "교정제안2", ...],
+      "explanation": "설명...",
+      "examples": ["예문1...", "예문2...", ...]
+  ]
+}
+```
