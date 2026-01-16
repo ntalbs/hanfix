@@ -17,10 +17,9 @@ function parse(html) {
 
   return [...document.querySelectorAll('div.cont_spell a')].map(node => {
     return {
-      errorType: node.dataset.errorType,
-      input: node.dataset.errorInput,
-      output: node.dataset.errorOutput,
-      helpText: node.querySelector('[id="help"] li')?.textContent,
+      original: node.dataset.errorInput,
+      suggestions: [node.dataset.errorOutput],
+      explanation: node.querySelector('[id="help"] li')?.textContent,
       examples: [...node.querySelectorAll('#examples li')].map(e => e.textContent)
     }
   });
