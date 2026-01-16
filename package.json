@@ -1,6 +1,6 @@
 {
   "name": "hanfix",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Korean grammar checker using Daum grammar checker",
   "keywords": [
     "한글",
