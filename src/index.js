@@ -3,9 +3,11 @@
 import fs from 'fs';
 import { program } from 'commander';
 import { check } from './hanfix.js';
+import pkg from '../package.json' with { type: 'json' };
 
 program
   .description('Korean Spell Checker')
+  .version(pkg.version)
   .option('-d, --data <text>', 'text for spell check')
   .option('-c, --include-corrected', 'include corrected text in the result')
   .action((options) => {
